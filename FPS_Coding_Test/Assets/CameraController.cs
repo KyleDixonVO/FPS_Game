@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour
     
     void LateUpdate()
     {
-        transform.position = Player.transform.position + offset;
+        //transform.position = Player.transform.position + offset;
     }
     private void Update()
     {
@@ -26,12 +26,12 @@ public class CameraController : MonoBehaviour
     }
     void MouseAiming()
     {
-        float y = Input.GetAxis("Mouse X") * turnSpeed;
-        rotX += Input.GetAxis("Mouse Y") * turnSpeed;
+        //float y = Input.GetAxis("Mouse X") * turnSpeed;
+        //rotX += Input.GetAxis("Mouse Y") * turnSpeed;
 
-        rotX = Mathf.Clamp(rotX, minTurnAngle, maxTurnAngle);
+        //rotX = Mathf.Clamp(rotX, minTurnAngle, maxTurnAngle);
 
-        transform.eulerAngles = new Vector3(-rotX, transform.eulerAngles.y + y, 0);
+        //transform.eulerAngles = new Vector3(-rotX, transform.eulerAngles.y + y, 0);
 
     }
 }
