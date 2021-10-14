@@ -9868,7 +9868,6 @@ GameObject:
   - component: {fileID: 1989696376}
   - component: {fileID: 1989696381}
   - component: {fileID: 1989696380}
-  - component: {fileID: 1989696382}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -9962,12 +9961,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1989696375}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc9392d5f4518b1479a4110b854ef1b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d62d199ec7298e468dfa7e222b5a8d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1989696375}
-  rb: {fileID: 1989696381}
-  mainCam: {fileID: 561105156}
 --- !u!54 &1989696381
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9983,70 +9979,4 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 0
---- !u!114 &1989696382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989696375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: fa628a2b83f3dcc4a9837df630a42ad4, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5617685404224645726, guid: fa628a2b83f3dcc4a9837df630a42ad4, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: set_name
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Jump
-          m_BoolArgument: 0
-        m_CallState: 1
-    m_ActionId: 63051b4f-3051-434a-b5cf-843a3eb932c4
-    m_ActionName: Player/Jump[/Keyboard/space]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: -5335533443869935368, guid: fa628a2b83f3dcc4a9837df630a42ad4, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: set_name
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Fire
-          m_BoolArgument: 0
-        m_CallState: 1
-    m_ActionId: 51e55719-380d-4be2-a395-e7ebc5cd5ba2
-    m_ActionName: Player/Fire[/Mouse/leftButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: c9a4f0df-dd98-46a9-9a89-fe10f0f77e03
-    m_ActionName: Player/New action
-  m_NeverAutoSwitchControlSchemes: 1
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  m_CollisionDetection: 1

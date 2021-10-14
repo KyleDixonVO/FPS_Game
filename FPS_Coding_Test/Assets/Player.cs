@@ -20,6 +20,12 @@ public class Player : MonoBehaviour
 
     }
 
+    public void FixedUpdate()
+    {
+        OnJump();
+        OnFire();
+        OnMove();
+    }
     public void OnJump()
     { 
         rb.AddForce(Vector3.up * 5, ForceMode.Impulse);
